@@ -1,0 +1,324 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.text{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  margin-top: 25px;
+}
+.header_logo{
+    height: 65px;
+    width: 65px;
+    position: relative;
+    right: 90px;
+    top: 2px;
+}
+.header_name{
+    height: 65px;
+    width: 230px;
+    position: relative;
+    right: 164px;
+}
+.home_header{
+    background-color: #71e6cd;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    position: fixed;
+}
+.scroll_header{
+    box-shadow: 5px 2px 18px black;
+    opacity: 0;
+    height: 10vh;
+    z-index: 3;
+}
+.scroll_header:hover{
+  opacity: 0.9;
+}
+.home_header p{
+    font-size: large;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.scroll{
+   width: 1519px;
+   height: auto;
+}
+.scroll img{
+    width: 1519px;
+    height: 765px;
+}
+.content_box{
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    padding: 10px;
+    border: solid transparent 2px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px 2px #00ad8a;
+}
+.content_box:hover{
+    box-shadow: 0px 0px 6px 5px #00ad8a;
+}
+.content{
+    width: 40vw;
+    height: 600px;
+    background-color: #00ad8a;
+    border: solid transparent 2px;
+    border-radius: 8px;
+    color: white;
+    margin: auto;
+}
+.content h2{
+    text-align: center;
+
+}
+.content p{
+  padding: 25px;
+  text-align: justify;
+  font-size: 18px;
+  margin: 10px;
+}
+.image{
+    margin: 10px;
+    height: 600px;
+    width: 800px;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #00ad8a;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 12%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 75%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: none; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: white;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid white;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(0.8)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+footer{
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  padding:15px;
+}
+.contact{
+  justify-self: center;
+  width: fit-content;
+  height: fit-content;
+}
+@keyframes fazein{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+@keyframes fazeout{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+.fazein{
+  animation: fazein 1s linear 0s 1 normal both;
+}
+.fazeout{
+  animation: fazeout 1s linear 0s 1 normal both;
+}
+.testimonial{
+  width: 25%;
+  margin: 50px 16px 10px ;
+  padding: 5px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 69vh;
+}
+
+.tb{
+  overflow: scroll;
+  display: flex;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.tb::-webkit-scrollbar{
+  display: none;
+}
+.tb h2{
+  position: absolute;
+  color:#000000;
+}
+#laurels{
+  height: auto;
+  width: 80vw;
+  margin: auto;
+}
+.laurelbox{
+   width: 82vw;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.navbarbtn{
+  text-decoration: none;
+  color: #383b4f;
+  font-size: 20px;
+  font-weight: 500;
+}
+.navbarbtn:hover{
+  text-decoration: underline;
+  color: #00ad8a;
+  text-underline-offset: 12px;
+}
+.evenlySpaced{
+  display: flex;
+  justify-content: space-evenly;
+}
+#productimage{
+  height: 90vh;
+  width: auto;
+  margin-left: 180px;
+}
+#headproduct{
+  position: relative;
+  font-size: -webkit-xxx-large;
+  margin: 0px;
+  top: -320px;
+}
+#scrollbtn{
+  position: absolute;
+  top: 606vh;
+  left: 95vw;
+}
+#scrollbtnopp{
+  position: absolute;
+  top: 606vh;
+  left: 2vw;
+}
+#scrollbtn:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+#scrollbtnopp:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
